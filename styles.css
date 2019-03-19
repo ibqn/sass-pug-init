@@ -1,0 +1,21 @@
+html {
+  background: #414042;
+}
+
+body {
+  width: 960px;
+  position: relative;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #fbae2c;
+  font-weight: bold;
+}
+
+p {
+  color: lightpink;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,25 @@
+{
+  "name": "css-pseudo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "ibqn",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^4.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "yargs": "^13.2.2"
+  }
+}
