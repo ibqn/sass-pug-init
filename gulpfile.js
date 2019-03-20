@@ -78,15 +78,18 @@ function webserver() {
   });
 }
 
-function clean(cb)
-{
+function clean(cb) {
   del(['index.html', 'styles.css']);
   cb();
 }
 
+function reload(cb) {
+  browserSync.reload();
+  cb();
+}
 
-watch(sources.sass, css);
-watch(sources.pug, series(html, browserSync.reload));
+const sassWatcher = watch(sources.sass, css);
+const htmlWatcher = watch(sources.pug, series(html, reload));
 
 
 const build = series(parallel(css, html), webserver);
