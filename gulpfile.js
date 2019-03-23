@@ -10,7 +10,6 @@ const
     notify        = require('gulp-notify'),
     autoprefixer  = require('gulp-autoprefixer'),
     del           = require('del'),
-    path          = require('path'),
     yargs         = require('yargs');
 
 const { series, parallel, watch, src, dest } = require('gulp');
@@ -21,17 +20,16 @@ const argv = yargs.argv;
 const production = !!argv.production;
 
 
-const sourcesPath = path.join(__dirname, 'process');
+const sourcesPath = './process/';
 
 const sources = {
-  sass: path.join(sourcesPath, '**/*.sass'),
+  sass: sourcesPath + '**/*.sass',
   // exclude pug file which starct with underscore!
-  pug: path.join(sourcesPath, '**/!(_)*.pug'),
-  pugWatch: path.join(sourcesPath, '**/*.pug'),
+  pug: sourcesPath + '**/!(_)*.pug',
+  pugWatch: sourcesPath + '**/*.pug',
 };
 
-
-const targetsPath = __dirname;
+const targetsPath = './'
 
 const targets = {
   css: targetsPath,
