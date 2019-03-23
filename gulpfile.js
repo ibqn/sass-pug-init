@@ -29,7 +29,7 @@ const sources = {
   pugWatch: sourcesPath + '**/*.pug',
 };
 
-const targetsPath = './'
+const targetsPath = './';
 
 const targets = {
   css: targetsPath,
